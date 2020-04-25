@@ -2,11 +2,27 @@
 
 require_once("config.php");
 
-$usuario = new Usuario();//--->confere login e senha
+$usuario = new Usuario();
+
+$usuario->loadById(9);
+
+$usuario->update("porofessora", "prof");
+
+echo $usuario;
+
+
+/*$aluno = new Usuario("alunin", "saaski");
+
+$aluno->insert();  ----->Criando um novo usuario
+
+echo $aluno;*/
+
+
+/*$usuario = new Usuario();  --->confere login e senha
 
 $usuario->login("yasmin","Brunin");
 
-echo $usuario;
+echo $usuario;*/
 
 
 /*$search = Usuario::search("hi");  ---> Pesquisar
