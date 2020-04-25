@@ -4,16 +4,25 @@ require_once("config.php");
 
 $usuario = new Usuario();
 
-$usuario->loadById(9);
+$usuario->loadById(10);
+
+$usuario->delete();
+
+echo $usuario
+
+
+/*$usuario = new Usuario();
+
+$usuario->loadById(9);  ------>Alterar senha e login do usuario
 
 $usuario->update("porofessora", "prof");
 
-echo $usuario;
+echo $usuario;*/
 
 
 /*$aluno = new Usuario("alunin", "saaski");
 
-$aluno->insert();  ----->Criando um novo usuario
+$aluno->insert();  //----->Criando um novo usuario
 
 echo $aluno;*/
 
