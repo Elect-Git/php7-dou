@@ -1,12 +1,30 @@
 <?php 
 
-require_once("config.php");//chamar o id que eu pedir...
+require_once("config.php");
 
-$yasmin = new Usuario();
+$usuario = new Usuario();//--->confere login e senha
 
-$yasmin->loadById(1);//...aqui
+$usuario->login("yasmin","Brunin");
 
-echo $yasmin;
+echo $usuario;
+
+
+/*$search = Usuario::search("hi");  ---> Pesquisar
+
+echo json_encode($search);*/
+
+
+/*$lista = Usuario::getList();<----- Lista todos os usuarios
+
+echo json_encode($lista);*/
+
+
+
+/*$yasmin = new Usuario();chamar o usuario (somente 1) que eu pedir...
+
+$yasmin->loadById(1);...aqui
+
+echo $yasmin;*/
 
 
 
